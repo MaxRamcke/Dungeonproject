@@ -7,6 +7,7 @@ public class Room{
 	private Room east;
 	private Room south;
 	private Room west;
+	private NPC enemy;
 	
 	//Erster Konstruktor
 	public Room() {
@@ -16,19 +17,29 @@ public class Room{
 		east = null;
 		south = null;
 		west = null;
+		enemy = null;
 	}
 		
 	//Zweiter Konstruktor 
-	public Room(String roomName, String description , Room north , Room east , Room south , Room west) {
+	public Room(String roomName, String description , Room north , Room east , Room south , Room west , NPC enemy) {
 		this.roomName = roomName;
 		this.description = description;
 		this.north = north; 
 		this.east = east;
 		this.south = south;
 		this.west = west;
+		this.enemy = enemy;
 	}
 	
 	
+	public NPC getEnemy() {
+		return enemy;
+	}
+
+	public void setEnemy(NPC enemy) {
+		this.enemy = enemy;
+	}
+
 	//sämtliche getter und setter
 	public String getRoomName() {
 		return roomName;

@@ -1,27 +1,31 @@
 package application;
 
-public class Character {
+public class NPC {
+	private String nname;
 	private double maxHealth;
 	private double currentHealth;
 	private double attack;
-	private NPC enemy;
 	
-	public Character() {
+	public NPC() {
+		nname = "loser";
 		maxHealth = 100.00;
 		currentHealth = maxHealth;
 		attack = 0.00;
-		enemy = null;
 	}
 	
-	public Character(double maxHealth , double attack) {
+	public NPC(String nname , double maxHealth , double attack) {
+		this.nname = nname;
 		this.maxHealth = maxHealth;
 		this.currentHealth = this.maxHealth;
 		this.attack = attack;
-		this.enemy = null;
 	}
-	
-	public NPC getEnemy() {
-		return enemy;
+
+	public String getNname() {
+		return nname;
+	}
+
+	public void setNname(String nname) {
+		this.nname = nname;
 	}
 
 	public double getMaxHealth() {
@@ -47,12 +51,7 @@ public class Character {
 	public void setAttack(double attack) {
 		this.attack = attack;
 	}
-
-	public void setEnemy(NPC enemy) {
-		this.enemy = enemy;
-	}
 	
-		
-	}
-
+}
+	
 	

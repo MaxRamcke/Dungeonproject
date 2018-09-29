@@ -17,6 +17,10 @@
             <Label fx:id="roomName" layoutX="501.0" layoutY="52.0" prefHeight="17.0" prefWidth="70.0" text="Name" textAlignment="CENTER" AnchorPane.topAnchor="52.0" />
             <TextArea fx:id="description" editable="false" layoutX="200.0" layoutY="131.0" prefHeight="20.0" prefWidth="200.0" promptText="hhg" />
             <Label layoutX="458.0" layoutY="52.0" text="Raum:" />
+            <Label fx:id="enemyName" layoutX="55.0" layoutY="44.0" prefHeight="17.0" prefWidth="113.0" text="Gegner: Name" />
+            <Label fx:id="enemyHealth" layoutX="55.0" layoutY="69.0" text="enemyHealth" />
+            <Label fx:id="health" layoutX="55.0" layoutY="195.0" prefHeight="17.0" prefWidth="71.0" text="health" />
+            <Button fx:id="attack" layoutX="400.0" layoutY="221.0" mnemonicParsing="false" onAction="#attack" text="attack" />
          </children>
       </AnchorPane>
    </left>
